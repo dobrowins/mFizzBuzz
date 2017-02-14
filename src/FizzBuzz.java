@@ -26,16 +26,10 @@ class FizzBuzz {
 
         FizzBuzz m = new FizzBuzz();
 
-        ArrayList<Integer> hundred = new ArrayList<>();
-
-        for (int i = 0; i < 101; i++) {
-            hundred.add(i);
-        }
-        hundred.remove(0);
-
-        for (int item : hundred) {
+        for (int item = 1; item < 101; item++) {
             m.printFizzBuzz(item);
         }
+
     }
 
     private void printFizzBuzz(int item) {
